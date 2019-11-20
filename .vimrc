@@ -13,6 +13,9 @@ autocmd InsertLeave * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 g
 call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'enricobacis/vim-airline-clock'
+Plug 'foxyblue/vim-clock-tick'
+Plug 'ryanoasis/vim-devicons'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
@@ -20,6 +23,9 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-python'
 Plug 'rafi/awesome-vim-colorschemes'
+
+" Adds Git diff to left gutter
+Plug 'mhinz/vim-signify'
 
 
 " All of your Plugins must be added before the following line
@@ -47,7 +53,7 @@ set foldlevel=99
 nnoremap <space> za
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4| 
+    \ set tabstop=4|
     \ set softtabstop=4|
     \ set shiftwidth=4|
     \ set textwidth=79|
@@ -58,6 +64,12 @@ au BufNewFile,BufRead *.py
 "define BadWhitespace before using in a match
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.go,*.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" Colours for signify
+highlight DiffAdd       cterm=bold ctermbg=238 ctermfg=46
+highlight DiffDelete    cterm=bold ctermbg=238 ctermfg=197
+highlight DiffChange    cterm=bold ctermbg=238 ctermfg=226
+highlight clear SignColumn
 
 let python_highlight_all=1
 syntax on
