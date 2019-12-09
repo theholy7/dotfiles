@@ -3,7 +3,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set showcmd
 
-colorscheme 256_noir
 " Change highlighting of cursor line when entering/leaving Insert Mode
 set cursorline
 highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
@@ -25,6 +24,8 @@ Plug 'rafi/awesome-vim-colorschemes'
 " All of your Plugins must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
+
+colorscheme afterglow
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
