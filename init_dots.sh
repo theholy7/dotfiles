@@ -6,7 +6,7 @@
 # .gitconfig
 # .ideavimrc
 # .vimrc
-declare -a arr=(".vimrc")
+declare -a arr=(".vimrc", ".bash_aliases")
 
 # Create symlinks from repo to HOME directory.
 for i in "${arr[@]}"
