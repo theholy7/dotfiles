@@ -17,7 +17,6 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-python'
 Plug 'rafi/awesome-vim-colorschemes'
 
 
@@ -38,7 +37,6 @@ set backspace=2
 
 " Set status bar (powerline) to always show
 set laststatus=2
-
 
 "Enable folding
 set foldmethod=indent
@@ -93,7 +91,7 @@ function! s:check_back_space() abort
 endfunction
 
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <silent><expr> <c-@> coc#refresh()
 
 " Use `[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
