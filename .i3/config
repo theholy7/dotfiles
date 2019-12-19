@@ -24,6 +24,18 @@ font pango:monospace 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# Setup light commands, don't forget to install light from github
+# Screen brightness controls
+# increase screen brightness
+bindsym XF86MonBrightnessUp exec light -A 5
+# decrease screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5
+
+# sound control
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioMute exec "amixer -q -D pulse sset Master toggle"
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up k
@@ -95,6 +107,7 @@ bindsym Mod4+space focus mode_toggle
 
 # focus the parent container
 bindsym Mod4+a focus parent
+bindsym Mod4+z focus child
 
 # focus the child container
 #bindsym Mod4+d focus child
