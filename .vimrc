@@ -21,6 +21,9 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'rafi/awesome-vim-colorschemes'
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -138,3 +141,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 let g:go_def_mapping_enabled = 0
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+
+
+" FZF buffers and Gitfiles
+nmap <leader>b :Buffers<CR>
+nmap <leader>r :GFiles<CR>
