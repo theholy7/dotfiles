@@ -1,3 +1,7 @@
+alias td="tree -d"
+alias t2="tree -L 2"
+
+
 alias gst="git status"
 alias v="vim ."
 
@@ -11,5 +15,5 @@ alias awsproduction="export AWS_PROFILE=production-full-access"
 alias awssharedservices="export AWS_PROFILE=shared-services-full-access"
 alias awssandbox="export AWS_PROFILE=sandbox-full-access"
 alias awssandboxapprole="export AWS_PROFILE=sandbox-app-role"
-alias awsjose="export AWS_PROFILE=jose_data_platform"
+alias awsjose="export AWS_PROFILE=jose-data-platform"
 alias awssosyncdjose="export AWS_PROFILE=jose-so-syncd"
