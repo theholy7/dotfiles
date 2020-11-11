@@ -57,7 +57,7 @@ au BufNewFile,BufRead *.py
     \ set tabstop=4| 
     \ set softtabstop=4|
     \ set shiftwidth=4|
-    \ set textwidth=79|
+    \ set textwidth=120|
     \ set expandtab|
     \ set autoindent|
     \ set fileformat=unix|
@@ -78,7 +78,7 @@ endfunction
 
 " FZF buffers and Gitfiles
 nmap <leader>b :Buffers<CR>
-nmap <leader>r :GFiles<CR>
+nmap <leader>f :GFiles<CR>
 
 let g:poetv_executables = ['poetry']
 let g:poetv_auto_activate = 0
