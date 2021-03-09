@@ -21,6 +21,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'petobens/poet-v'
 Plug 'davidhalter/jedi-vim'
+Plug 'vim-scripts/django.vim'
 
 
 " All of your Plugins must be added before the following line
